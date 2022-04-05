@@ -10,15 +10,11 @@ function About() {
     return (
         <Layout about>
             <div className={styles.nav}>
-            <Link href="/about">
-                <a>About</a>
-            </Link>
-        </div>
-            <div className={styles.nav}>
-                <Link href="/projects">
-                    <a>Projects</a>
+                <Link href="/about">
+                    <a>About</a>
                 </Link>
             </div>
+
             <div className={styles.nav}>
                 <Link href="https://github.com/ashmval">
                     <a>Github</a>

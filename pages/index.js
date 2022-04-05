@@ -30,11 +30,6 @@ export default function Home({ allPostsData }) {
                 </Link>
             </div>
             <div className={styles.nav}>
-                <Link href="/projects">
-                    <a>Projects</a>
-                </Link>
-            </div>
-            <div className={styles.nav}>
                 <Link href="https://github.com/ashmval">
                     <a>Github</a>
                 </Link>
