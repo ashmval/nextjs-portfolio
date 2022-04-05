@@ -6,7 +6,7 @@ import Date from '../components/date'
 import styles from "../components/layout.module.css";
 import * as React from "react";
 
-function About() {
+export default function About() {
     return (
         <Layout about>
 
@@ -14,9 +14,11 @@ function About() {
                 <title>{siteTitle}</title>
             </Head>
             <section className={utilStyles.headingMd}>
-                <p>Hi, I'm a developer of many things.</p>
                 <p>
-                    Using this website I will document my experience learning Next.js.
+
+                </p>
+                <p>
+
                 </p>
             </section>
 
@@ -24,4 +26,3 @@ function About() {
     )
 }
 
-export default About

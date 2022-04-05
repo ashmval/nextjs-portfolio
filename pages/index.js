@@ -26,11 +26,19 @@ export default function Home({ allPostsData }) {
             </Head>
 
             <section className={utilStyles.headingMd}>
-                <p>Hi, I'm a developer of many things.</p>
                 <p>
-                    Welcome to my website.
+                     Welcome, stay a while.
+                </p>
+                <p>
+
+                    Explore my GitHub or check out my blog.
 
                 </p>
+                <div>
+                    <Link href="/resume.pdf">
+                        <a>Download Resume</a>
+                    </Link>
+                </div>
             </section>
 
 

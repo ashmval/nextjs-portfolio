@@ -29,7 +29,7 @@ export default function Layout({ children, home }) {
     return (
         <div className={styles.container}>
             <div>
-                <button className='visible' onClick={() => {
+                <button className='' onClick={() => {
                     if (theme == ('light')) {
                         setTheme('dark')
                     } else {
@@ -39,7 +39,7 @@ export default function Layout({ children, home }) {
                 }>
                     <Image
                         priority
-                        src="/images/balloon.svg"
+                        src="/images/pawPrint.svg"
                         height={25}
                         width={25}
                         alt="Toggle dark-mode"
@@ -62,7 +62,6 @@ export default function Layout({ children, home }) {
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
             <header className={styles.header}>
-                {home ? (
                     <>
                         <Image
                             priority
@@ -94,39 +93,14 @@ export default function Layout({ children, home }) {
                                     <a className="nav-item-one">Blog</a>
                                 </Link>
                             </div>
+
                         </nav>
 
                     </>
-                ) : (
-                    <>
-                        <Link href="/">
-                            <a>
-                                <Image
-                                    priority
-                                    src="/images/kitty.png"
-                                    className={utilStyles.borderCircle}
-                                    height={108}
-                                    width={108}
-                                    alt={name}
-                                />
-                            </a>
-                        </Link>
-                        <h2 className={utilStyles.headingLg}>
-                            <Link href="/">
-                                <a className={utilStyles.colorInherit}>{name}</a>
-                            </Link>
-                        </h2>
-                    </>
-                )}
+
             </header>
             <main>{children}</main>
-            {!home && (
-                <div className={styles.backToHome}>
-                    <Link href="/">
-                        <a>← Back to home</a>
-                    </Link>
-                </div>
-            )}
+
         </div>
     )
 }

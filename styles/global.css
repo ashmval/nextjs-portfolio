@@ -45,3 +45,12 @@ img {
     text-decoration: none;
 
 }
+
+
+.visible {
+    padding-top:10px;
+    border: 1px solid gray(10);
+    border-shadow: none;
+    background-color: ghostwhite;
+
+}
