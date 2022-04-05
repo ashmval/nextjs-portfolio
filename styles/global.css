@@ -31,3 +31,17 @@ img {
     padding-right: 25px;
     display: inline;
 }
+
+
+.nav-item {
+    display: inline;
+    float: left;
+}
+
+.nav-item-one{
+    font-size: 50px;
+    all: revert;
+    color: #538f93;
+    text-decoration: none;
+
+}

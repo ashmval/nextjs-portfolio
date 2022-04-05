@@ -40,7 +40,6 @@ export default function Layout({ children, home }) {
                     <Image
                         priority
                         src="/images/balloon.svg"
-                        className={utilStyles.borderCircle}
                         height={25}
                         width={25}
                         alt="Toggle dark-mode"
@@ -74,6 +73,29 @@ export default function Layout({ children, home }) {
                             alt={name}
                         />
                         <h1 className={utilStyles.heading2Xl}>{name}</h1>
+                        <nav className="nav">
+                            <div className="nav">
+                                <Link href="/">
+                                    <a className="nav-item-one">Home</a>
+                                </Link>
+                            </div>
+                            <div  className="nav">
+                                <Link href="/about">
+                                    <a className="nav-item-one">About</a>
+                                </Link>
+                            </div>
+                            <div className="nav">
+                                <Link href="https://github.com/ashmval">
+                                    <a className="nav-item-one">Github</a>
+                                </Link>
+                            </div>
+                            <div className="nav">
+                                <Link href="/blog">
+                                    <a className="nav-item-one">Blog</a>
+                                </Link>
+                            </div>
+                        </nav>
+
                     </>
                 ) : (
                     <>

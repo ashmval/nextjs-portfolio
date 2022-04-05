@@ -25,22 +25,6 @@ export default function Home({ allPostsData }) {
                 <title>{siteTitle}</title>
             </Head>
 
-            <div className={styles.nav}>
-                <Link href="/about">
-                    <a>About</a>
-                </Link>
-            </div>
-
-            <div className={styles.nav}>
-                <Link href="https://github.com/ashmval">
-                    <a>Github</a>
-                </Link>
-            </div>
-            <div className={styles.nav}>
-                <Link href="/blog">
-                    <a>Blog</a>
-                </Link>
-            </div>
 
             {/* Add this <section> tag below the existing <section> tag */}
             <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>

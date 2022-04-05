@@ -24,48 +24,17 @@ export default function Home({ allPostsData }) {
             <Head>
                 <title>{siteTitle}</title>
             </Head>
-            <div className={styles.nav}>
-                <Link href="/about">
-                    <a>About</a>
-                </Link>
-            </div>
-            <div className={styles.nav}>
-                <Link href="https://github.com/ashmval">
-                    <a>Github</a>
-                </Link>
-            </div>
-            <div className={styles.nav}>
-                <Link href="/blog">
-                    <a>Blog</a>
-                </Link>
-            </div>
+
             <section className={utilStyles.headingMd}>
                 <p>Hi, I'm a developer of many things.</p>
                 <p>
-                    Using this website I will document my experience learning Next.js.
-
+                    Welcome to my website.
 
                 </p>
             </section>
 
 
-            {/* Add this <section> tag below the existing <section> tag */}
-            <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-                <h2 className={utilStyles.headingLg}>Blog</h2>
-                <ul className={utilStyles.list}>
-                    {allPostsData.map(({ id, date, title }) => (
-                        <li className={utilStyles.listItem} key={id}>
-                            <Link href={`/posts/${id}`}>
-                                <a>{title}</a>
-                            </Link>
-                            <br />
-                            <small classNmae={utilStyles.lightText}>
-                                <Date dateString={date} />
-                            </small>
-                        </li>
-                    ))}
-                </ul>
-            </section>
+
         </Layout>
     )
 }
