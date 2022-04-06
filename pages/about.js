@@ -14,13 +14,67 @@ export default function About() {
                 <title>{siteTitle}</title>
             </Head>
             <section className={utilStyles.headingMd}>
+                <h2>
+                    About Me
+                </h2>
                 <p>
-
+                    {/*Fix this */}
+                    I'm originally from Edmonton, Alberta.
+                    I moved here last August with my fiancé to be closer to his family.
+                    I have a passion for programming, I've been learning since 2018.
+                    I'm very excited to be a part of the Computer Information Systems program.
                 </p>
-                <p>
-
-                </p>
-            </section>
+                    <div>
+                        <h2>Work Experience</h2>
+                        <ul>
+                            <li className="title">
+                                <strong>Grizzly Works, Canada</strong> - Web Developer, 2021 - Current
+                            </li>
+                            <li className="title">
+                                <p>
+                                    <strong>KOA Campgrounds, Charlottetown/Cornwall </strong> - Cleaner, May 2021 - September 2021
+                                </p>
+                            </li>
+                            <li className="title">
+                                <p>
+                                    <strong> Buchanan Technologies, Charlottetown </strong> - Service Desk Analyst, December 2020 - May 2021
+                                </p>
+                            </li>
+                            <li className="title">
+                                <p>
+                                    <strong>Haemonetics, Edmonton </strong>- Application Support Analyst, April 2020 - July 2020
+                                </p>
+                            </li>
+                            <li className="title">
+                                <p>
+                                    <strong>Western Drug Distribution, Edmonton </strong>- Software Support Analyst, May 2017 - March 2020
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                <div>
+                    <h2>Education</h2>
+                    <ul>
+                        <li className="title">
+                            <strong>Northern Alberta Institute of Technology</strong> - Computer Network Administration,
+                            2013 - 2014
+                            <p>
+                                Graduated the Computer Network Administration program with courses covering topics such
+                                as Linux, Active Directory, scripting fundamentals, technical communication, network
+                                fundamentals, virtualization and client/server fundamentals
+                            </p>
+                        </li>
+                        <li className="title">
+                            <strong>Holland College</strong> - Computer Information Systems, September 2021 - April 2023
+                            <p>
+                                Attended Holland College with courses such as Object Oriented Programming, Web
+                                Development, Andriod Development, Business Communications, Networking Principes and
+                                Databases.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                </section>
 
         </Layout>
     )
