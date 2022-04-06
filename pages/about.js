@@ -55,18 +55,6 @@ export default function About() {
                     <ul>
                         <li className="title">
                             <p>
-                                <span className="employer">Grizzly Works, Canada </span>
-                                <br />
-                                <span className="titleName">
-                                    Web Developer
-                                </span>
-                                <span className="dates">
-                                     December 2021 - Present
-                                </span>
-                            </p>
-                        </li>
-                        <li className="title">
-                            <p>
                                 <span className="employer">KOA Campgrounds, Charlottetown/Cornwall </span>
                                 <br />
                                 <span className="titleName">
