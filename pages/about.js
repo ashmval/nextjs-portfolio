@@ -14,44 +14,28 @@ export default function About() {
                 <title>{siteTitle}</title>
             </Head>
             <section className={utilStyles.headingMd}>
+                <nav className="nav">
+                    <div className="nav">
+                        <Link href="#workExperience">
+                            <a className="nav-item-one">Work Experience</a>
+                        </Link>
+                    </div>
+                    <div className="nav">
+                        <Link href="#education">
+                            <a className="nav-item-one">Education</a>
+                        </Link>
+                    </div>
+                    <div className="nav">
+                        <Link href="#skills">
+                            <a className="nav-item-one">Skills</a>
+                        </Link>
+                    </div>
+                </nav>
                 <h2>
                     About Me
                 </h2>
                 <div>
-                    <h3>Skills</h3>
-                    <table className="skills">
-
-                        <tr>
-                            <td>
-                                <li> SQL</li>
-                            </td>
-                            <td>
-                                <li>HTML</li>
-                            </td>
-                            <td>
-                                <li>CSS</li>
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <td>
-                                <li>JavaScript</li>
-                            </td>
-                            <td>
-                                <li>jQuery</li>
-                            </td>
-                            <td>
-                                <li>
-                                    Next.js
-                                </li>
-                            </td>
-                        </tr>
-                    </table>
-
-                </div>
-
-                <div>
-                    <h3>Work Experience</h3>
+                    <h3 id="workExperience">Work Experience</h3>
                     <ul>
                         <li className="title">
                             <p>
@@ -104,7 +88,7 @@ export default function About() {
                     </ul>
                 </div>
                 <div>
-                    <h3>Education</h3>
+                    <h3 id="education">Education</h3>
                     <ul>
                         <li className="title">
                             <span className="employer">
@@ -140,6 +124,68 @@ export default function About() {
                         </li>
                     </ul>
                 </div>
+
+                <div>
+                    <h3 id="skills">Skills</h3>
+                    <ul>
+                        <li>
+                            SQL
+                        </li>
+                        <li>
+                            HTML
+                        </li>
+                        <li>
+                            CSS
+                        </li>
+                        <li>
+                            JavaScript
+                        </li>
+                        <li>
+                            jQuery
+                        </li>
+                        <li>
+                            Next.js
+                        </li>
+                        <li>
+                            Java
+                        </li>
+                        <li>
+                            Windows, Mac, and Linux
+                        </li>
+                        <li>
+                            Visual Studio
+                        </li>
+                        <li>
+                            Jira
+                        </li>
+                        <li>
+                            Computer Networking
+                        </li>
+                        <li>
+                            Office 365 Administration
+                        </li>
+                        <li>
+                            SQL Server Administration
+                        </li>
+                        <li>
+                            Confluence
+                        </li>
+                        <li>
+                            Adobe Illustrator
+                        </li>
+                        <li>
+                            C#
+                        </li>
+                        <li>
+                            XML
+                        </li>
+                        <li>
+                            eCommerce (Lightspeed, Shopify, NopCommerce)
+                        </li>
+                    </ul>
+
+                </div>
+
             </section>
         </Layout>
     )
