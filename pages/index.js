@@ -34,17 +34,7 @@ export default function Home({ allPostsData }) {
                     Explore my GitHub or check out my blog.
 
                 </p>
-                <div>
-                    <Link href="/resume.pdf">
-                        <a>Download Resume</a>
-                    </Link>
-                </div>
 
-                <div>
-                    <Link href="/miniGolfKiosk/miniGolfKiosk.html">
-                        <a>View Project</a>
-                    </Link>
-                </div>
             </section>
 
 

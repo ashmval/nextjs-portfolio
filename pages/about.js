@@ -38,6 +38,15 @@ export default function About() {
                             </Link>
                         </li>
                     </div>
+                    <div>
+                        <li>
+                            <Link href="/resume.pdf">
+                                <a>Download Resume</a>
+                            </Link>
+                        </li>
+
+                    </div>
+
                 </nav>
                 <h2>
                     About Me
