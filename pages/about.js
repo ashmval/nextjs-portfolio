@@ -19,13 +19,9 @@ export default function About() {
                 </h2>
                 <p>
                     {/*Fix this */}
-                    I'm originally from Edmonton, Alberta.
-                    I moved here last August with my fiancé to be closer to his family.
-                    I have a passion for programming, I've been learning since 2018.
-                    I'm very excited to be a part of the Computer Information Systems program.
                 </p>
                     <div>
-                        <h2>Work Experience</h2>
+                        <h3>Work Experience</h3>
                         <ul>
                             <li className="title">
                                 <strong>Grizzly Works, Canada</strong> - Web Developer, 2021 - Current
@@ -53,7 +49,7 @@ export default function About() {
                         </ul>
                     </div>
                 <div>
-                    <h2>Education</h2>
+                    <h3>Education</h3>
                     <ul>
                         <li className="title">
                             <strong>Northern Alberta Institute of Technology</strong> - Computer Network Administration,
@@ -74,8 +70,7 @@ export default function About() {
                         </li>
                     </ul>
                 </div>
-                </section>
-
+            </section>
         </Layout>
     )
 }
