@@ -54,3 +54,18 @@ img {
     background-color: ghostwhite;
 
 }
+
+.titleName {
+    font-weight: bold;
+    display: grid;
+    color: #39bfc9;
+}
+
+.skills {
+    border-collapse: collapse;
+    width: 80%;
+}
+
+.pawPrint {
+    border: whitesmoke 1px;
+}
