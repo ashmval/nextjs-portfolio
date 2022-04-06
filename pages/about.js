@@ -13,22 +13,30 @@ export default function About() {
             <Head>
                 <title>{siteTitle}</title>
             </Head>
-            <section className={utilStyles.headingMd}>
-                <nav className="nav">
-                    <div className="nav">
-                        <Link href="#workExperience">
-                            <a className="nav-item-one">Work Experience</a>
-                        </Link>
+            <section title="I'm a sub-nav!" className={utilStyles.headingMd}>
+                <br />
+                <nav className="">
+                    <div className="">
+                        <li>
+                            <Link href="#workExperience">
+                                <a className="nav-item-one">Work Experience</a>
+                            </Link>
+                        </li>
+
                     </div>
-                    <div className="nav">
-                        <Link href="#education">
-                            <a className="nav-item-one">Education</a>
-                        </Link>
+                    <div className="">
+                        <li>
+                            <Link href="#education">
+                                <a className="nav-item-one">Education</a>
+                            </Link>
+                        </li>
                     </div>
-                    <div className="nav">
-                        <Link href="#skills">
-                            <a className="nav-item-one">Skills</a>
-                        </Link>
+                    <div className="">
+                        <li>
+                            <Link href="#skills">
+                                <a className="nav-item-one">Skills</a>
+                            </Link>
+                        </li>
                     </div>
                 </nav>
                 <h2>

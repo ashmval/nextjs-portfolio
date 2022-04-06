@@ -12,7 +12,7 @@ import * as React from 'react'
 import { Range } from 'react-range'
 
 const name = 'Ashley Vallette'
-export const siteTitle = 'Blog built with Next.js'
+export const siteTitle = 'Ashley\'s Personal Portfolio'
 import { useTheme } from 'next-themes'
 
 const ThemeChanger = () => {
@@ -93,6 +93,11 @@ export default function Layout({ children, home }) {
                             <div className="nav">
                                 <Link href="/blog">
                                     <a className="nav-item-one">Blog</a>
+                                </Link>
+                            </div>
+                            <div className="nav">
+                                <Link href="/projects">
+                                    <a className="nav-item-one">Projects</a>
                                 </Link>
                             </div>
 

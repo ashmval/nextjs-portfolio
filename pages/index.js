@@ -39,6 +39,12 @@ export default function Home({ allPostsData }) {
                         <a>Download Resume</a>
                     </Link>
                 </div>
+
+                <div>
+                    <Link href="/miniGolfKiosk/miniGolfKiosk.html">
+                        <a>View Project</a>
+                    </Link>
+                </div>
             </section>
 
 
