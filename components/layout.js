@@ -29,6 +29,14 @@ export default function Layout({ children, home }) {
     return (
         <div className={styles.container}>
             <div>
+                <button className='' onClick={() => {
+                    if (theme == ('light')) {
+                        setTheme('dark')
+                    } else {
+                        setTheme('light')
+                    }
+                }
+                }>
                     <Image
                         priority
                         src="/images/pawPrint.svg"
@@ -36,14 +44,7 @@ export default function Layout({ children, home }) {
                         width={25}
                         alt="Toggle dark-mode"
                         title="Toggle dark-mode"
-                        onClick={() => {
-                            if (theme == ('light')) {
-                                setTheme('dark')
-                            } else {
-                                setTheme('light')
-                            }
-                        }
-                />
+                    /></button>
             </div>
             <Head>
                 <link rel="icon" href="/favicon.ico" />
