@@ -32,7 +32,7 @@ export default function Layout({ children, home }) {
 
                     <Image
                         priority
-                        src="/images/pawPrint.svg"
+                        src="/images/lamp-fill.svg"
                         height={50}
                         width={50}
                         alt="Toggle dark-mode"
