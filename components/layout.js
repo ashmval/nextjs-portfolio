@@ -33,8 +33,8 @@ export default function Layout({ children, home }) {
                     <Image
                         priority
                         src="/images/lamp-fill.svg"
-                        height={50}
-                        width={50}
+                        height={25}
+                        width={25}
                         alt="Toggle dark-mode"
                         title="Toggle dark-mode"
                         className="pawPrint"
