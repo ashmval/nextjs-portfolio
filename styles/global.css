@@ -70,6 +70,7 @@ img {
     border: whitesmoke 1px;
 }
 
-table {
-
+.nav {
+    padding-right: 0px!important;
+    padding-left: 10px;
 }

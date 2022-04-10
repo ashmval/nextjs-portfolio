@@ -67,14 +67,13 @@ export default function Layout({ children, home }) {
                     <>
                         <Image
                             priority
-                            src="/images/kitty.jpg"
-                            className={utilStyles.borderCircle}
+                            src="/images/cat.svg"
                             height={150}
                             width={150}
                             alt={name}
                         />
                         <h1 className={utilStyles.heading2Xl}>{name}</h1>
-                        <nav className="nav">
+                        <nav>
                             <div className="nav">
                                 <Link href="/">
                                     <a className="nav-item-one">Home</a>
