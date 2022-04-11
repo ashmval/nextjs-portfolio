@@ -6,7 +6,6 @@ import Date from '../components/date'
 
 import { getSortedPostsData } from '../lib/posts'
 import * as React from "react";
-import styles from "../components/layout.module.css";
 
 export async function getStaticProps() {
     const allPostsData = getSortedPostsData()
@@ -30,14 +29,16 @@ export default function Blog({ allPostsData }) {
             <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
                 <h2 className={utilStyles.headingLg}>Blog</h2>
                 <ul className={utilStyles.list}>
-                    {allPostsData.map(({ id, date, title }) => (
+                    {allPostsData.map(({ id, date, title, category }) => (
                         <li className={utilStyles.listItem} key={id}>
                             <Link href={`/posts/${id}`}>
                                 <a>{title}</a>
                             </Link>
                             <br />
-                            <small classNmae={utilStyles.lightText}>
+                            <small className={utilStyles.lightText}>
                                 <Date dateString={date} />
+                                <br />
+                                {category}
                             </small>
                         </li>
                     ))}

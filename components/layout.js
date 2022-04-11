@@ -1,6 +1,6 @@
 /**
- * Images: https://pixabay.com/vectors/monster-cute-beast-animal-funny-4271569/
- * https://pixabay.com/vectors/cat-pet-animal-mammal-feline-cute-6047457/
+ * Images:
+ * https://pixabay.com/vectors/cat-animal-doodle-kitten-pet-6102014/
  *
  */
 import Head from 'next/head'
@@ -15,15 +15,23 @@ const name = 'Ashley Vallette'
 export const siteTitle = 'Ashley\'s Personal Portfolio'
 import { useTheme } from 'next-themes'
 
+let imageModeString
+
 const ThemeChanger = () => {
     const { theme, setTheme } = useTheme()
-
 
 }
 
 
-export default function Layout({ children, home }) {
+
+
+export default function Layout({ children }) {
     const { theme, setTheme } = useTheme()
+    if (theme == ('dark')) {
+        imageModeString = "/images/lamp.svg"
+    } else {
+        imageModeString = "/images/lamp-fill.svg"
+    }
 
     ThemeChanger()
     return (
@@ -32,7 +40,7 @@ export default function Layout({ children, home }) {
 
                     <Image
                         priority
-                        src="/images/lamp-fill.svg"
+                        src={imageModeString}
                         height={25}
                         width={25}
                         alt="Toggle dark-mode"
@@ -41,7 +49,6 @@ export default function Layout({ children, home }) {
                         onClick={() => {
                             if (theme == ('light')) {
                                 setTheme('dark')
-
                             } else {
                                 setTheme('light')
                             }
@@ -52,7 +59,7 @@ export default function Layout({ children, home }) {
                 <link rel="icon" href="/favicon.ico" />
                 <meta
                     name="description"
-                    content="Learn how to build a personal website using Next.js"
+                    content="A personal portfolio site made with Next.js"
                 />
                 <meta
                     property="og:image"
