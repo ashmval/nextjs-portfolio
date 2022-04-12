@@ -4,20 +4,20 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Date from '../components/date'
 
-import { getSortedPostsData } from '../lib/posts'
+import { getSortedProjectsData } from '../lib/projects'
 import styles from "../components/layout.module.css";
 import * as React from "react"
 
 export async function getStaticProps() {
-    const allPostsData = getSortedPostsData()
+    const allProjectsData = getSortedProjectsData()
     return {
         props: {
-            allPostsData
+            allProjectsData
         }
     }
 }
 
-export default function Projects({ allPostsData }) {
+export default function Projects({ allProjectsData }) {
     return (
         <Layout projects>
 
@@ -25,31 +25,22 @@ export default function Projects({ allPostsData }) {
                 <title>{siteTitle}</title>
             </Head>
 
-            <section className={utilStyles.headingMd}>
-                <h2>
-                    Projects
-                </h2>
-                <p>
-
-                    Here are some of the projects I've worked on during my time in the Computer Information Systems program at Holland College.
-                </p>
-                <div>
-                    <li>
-                        <Link href="/miniGolfKiosk/miniGolfKiosk.html">
-                            <a>Put-Put-Par-Tee</a>
-                        </Link>
-                        <span>
-                            : A project I converted from vanilla JavaScript to jQuery.
-                            While converting to jQuery, the overall look and design changed as well.
-                        </span>
-                    </li>
-
-                    <p>
-                    </p>
-                </div>
+            <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+                <h2 className={utilStyles.headingLg}>Projects</h2>
+                <ul className={utilStyles.list}>
+                    {allProjectsData.map(({ id, title, date }) => (
+                        <li className={utilStyles.listItem} key={id}>
+                            <Link href={`/projects/${id}`}>
+                                <a>{title}</a>
+                            </Link>
+                            <br />
+                            <small className={utilStyles.lightText}>
+                                <Date dateString={date} />
+                            </small>
+                        </li>
+                        ))}
+                </ul>
             </section>
-
-
 
         </Layout>
     )

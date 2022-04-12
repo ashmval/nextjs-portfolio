@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Date from '../components/date'
 import styles from "../components/layout.module.css";
 import * as React from "react";
+import Image from "next/image";
 
 export default function About() {
     return (
@@ -105,7 +106,15 @@ export default function About() {
                     </ul>
                 </div>
                 <div>
+                    <Image
+                    priority
+                    src="/images/mortarboard.svg"
+                    height={50}
+                    width={50}
+                    alt={"test"}
+                />
                     <h3 id="education">Education</h3>
+
                     <ul>
                         <li className="title">
                             <span className="employer">

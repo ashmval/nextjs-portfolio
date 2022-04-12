@@ -96,11 +96,7 @@ export default function Layout({ children }) {
                                     <a className="nav-item-one">Github</a>
                                 </Link>
                             </div>
-                            <div className="nav">
-                                <Link href="/blog">
-                                    <a className="nav-item-one">Blog</a>
-                                </Link>
-                            </div>
+
                             <div className="nav">
                                 <Link href="/projects">
                                     <a className="nav-item-one">Projects</a>
