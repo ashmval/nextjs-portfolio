@@ -27,6 +27,9 @@ export default function Projects({ allProjectsData }) {
 
             <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
                 <h2 className={utilStyles.headingLg}>Projects</h2>
+                <p>
+                    Here are some of the projects I've worked on during my time in the Computer Information Systems program at Holland College.
+                </p>
                 <ul className={utilStyles.list}>
                     {allProjectsData.map(({ id, title, date }) => (
                         <li className={utilStyles.listItem} key={id}>

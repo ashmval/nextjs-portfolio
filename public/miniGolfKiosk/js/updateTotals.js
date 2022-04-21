@@ -14,14 +14,11 @@ Function to load jQuery event listeners
 */
 function init() {
 
+
+    $('select').on("change", updateTotals);
     $('#changeButton').on("click", calculateChange);
     $('#resetForm').on("click", resetForm);
-    $('#caa').on("change", updateTotals);
-    $("#mil").on("change", updateTotals);
-    $('#fun').on("change", updateTotals);
-    $('#children').on("change", updateTotals);
-    $('#adults').on("change", updateTotals);
-    $('#children').on("change", updateTotals);
+    $("input[name='discountGroup']").on("change", updateTotals);
 }
 
 // declare global vars
