@@ -22,9 +22,7 @@ export default function Home() {
                      Welcome, stay a while.
                 </p>
                 <p>
-
-                    Explore my GitHub or check out my blog.
-
+                    Explore my GitHub or check out my projects.
                 </p>
 
             </section>
