@@ -1,6 +1,8 @@
 /**
- * Images:
- * https://pixabay.com/vectors/cat-animal-doodle-kitten-pet-6102014/
+ * Purpose: Provides layout structure for all files inside the pages folder
+ * Author: Ashley V
+ * Since: 2022-04-18
+ * Images: https://pixabay.com/vectors/cat-animal-doodle-kitten-pet-6102014/
  *
  */
 import Head from 'next/head'
@@ -9,7 +11,6 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import * as React from 'react'
-import { Range } from 'react-range'
 
 const name = 'Ashley Vallette'
 export const siteTitle = 'Ashley\'s Personal Portfolio'
@@ -17,43 +18,31 @@ import { useTheme } from 'next-themes'
 
 let imageModeString
 
-const ThemeChanger = () => {
-    const { theme, setTheme } = useTheme()
-
-}
-
-
-
-
 export default function Layout({ children }) {
     const { theme, setTheme } = useTheme()
     if (theme == ('dark')) {
         imageModeString = "/images/lamp.svg"
     } else {
         imageModeString = "/images/lamp-fill.svg"
-    }
-
-    ThemeChanger()
-    return (
+    } return (
         <div className={styles.container}>
             <div>
-
-                    <Image
-                        priority
-                        src={imageModeString}
-                        height={25}
-                        width={25}
-                        alt="Toggle dark-mode"
-                        title="Toggle dark-mode"
-                        className="pawPrint"
-                        onClick={() => {
-                            if (theme == ('light')) {
-                                setTheme('dark')
-                            } else {
-                                setTheme('light')
-                            }
+                <Image
+                    priority
+                    src={imageModeString}
+                    height={25}
+                    width={25}
+                    alt="Toggle dark-mode"
+                    title="Toggle dark-mode"
+                    className="pawPrint"
+                    onClick={() => {
+                        if (theme == ('light')) {
+                            setTheme('dark')
+                        } else {
+                            setTheme('light')
                         }
-                        } />
+                    }
+                    } />
             </div>
             <Head>
                 <link rel="icon" href="/favicon.ico" />

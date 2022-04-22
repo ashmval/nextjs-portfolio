@@ -1,3 +1,9 @@
+/**
+ * Purpose: List out and present all files located in /pages/projects/
+ * Author: Ashley V
+ * Since: 2022-04-18
+ */
+
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'

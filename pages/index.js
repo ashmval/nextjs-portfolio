@@ -1,10 +1,12 @@
+/**
+ * Purpose: Main index file, welcome the person to the website.
+ * Author: Ashley V
+ * Since: 2022-04-18
+ */
+
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
-import Link from 'next/link'
-import Date from '../components/date'
-
-import styles from "../components/layout.module.css";
 import * as React from "react"
 
 

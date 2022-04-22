@@ -1,3 +1,9 @@
+/**
+ * Purpose: Provide a nice layout for pages.
+ * Author: Ashley V
+ * Since: 2022-04-18
+ */
+
 html,
 body {
     padding: 0;
@@ -74,3 +80,5 @@ img {
     padding-right: 0px!important;
     padding-left: 10px;
 }
+
+

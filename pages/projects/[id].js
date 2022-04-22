@@ -1,3 +1,9 @@
+/**
+ * Purpose: Provide a web page for each file listed in /pages/projects/
+ * Author: Ashley V
+ * Since: 2022-04-18
+ */
+
 import Layout from '../../components/layout'
 import { getAllProjectIds, getProjectData } from '../../lib/projects'
 import Head from 'next/head'

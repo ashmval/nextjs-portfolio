@@ -1,3 +1,9 @@
+/**
+ * Purpose: Ensure the layout is consistent throughout the application
+ * Author: Ashley V
+ * Since: 2022-04-18
+ */
+
 import '../styles/global.css'
 import { ThemeProvider } from "next-themes";
 

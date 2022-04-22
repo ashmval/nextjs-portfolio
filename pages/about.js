@@ -1,9 +1,13 @@
+/**
+ * Purpose: List out previous experience and provide a link to my resume.
+ * Author: Ashley V
+ * Since: 2022-04-18
+ */
+
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
-import Date from '../components/date'
-import styles from "../components/layout.module.css";
 import * as React from "react";
 import Image from "next/image";
 
@@ -45,9 +49,7 @@ export default function About() {
                                 <a>Download Resume</a>
                             </Link>
                         </li>
-
                     </div>
-
                 </nav>
                 <h2>
                     About Me
