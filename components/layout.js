@@ -80,6 +80,7 @@ export default function Layout({ children }) {
                             alt={name}
                         />
                         <h1 className={utilStyles.heading2Xl}>{name}</h1>
+                        <h4 className={utilStyles.headingMd}>Analytical, creative, and a bit neurodivergent.</h4>
                         <nav>
                             <div className="nav">
                                 <Link href="/">
