@@ -108,13 +108,7 @@ export default function About() {
                     </ul>
                 </div>
                 <div>
-                    <Image
-                    priority
-                    src="/images/mortarboard.svg"
-                    height={50}
-                    width={50}
-                    alt={"test"}
-                />
+                   
                     <h3 id="education">Education</h3>
 
                     <ul>
