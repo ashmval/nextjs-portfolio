@@ -29,7 +29,8 @@
 .headingMd {
     font-size: 1.1rem;
     font-weight: normal;
-    margin-top: 0px;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 .borderCircle {
