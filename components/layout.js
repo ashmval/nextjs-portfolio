@@ -14,36 +14,26 @@ import * as React from 'react'
 
 const name = 'Ashley Vallette'
 export const siteTitle = 'Ashley\'s Personal Portfolio'
-import { useTheme } from 'next-themes'
+import {
+    ChakraProvider,
+} from '@chakra-ui/react'
 
-let imageModeString
+import { extendTheme } from '@chakra-ui/react'
+import {ChevronDownIcon} from "@chakra-ui/icons";
+
+const colors = {
+    900: '#538f93',
+    800: '#39bfc9',
+    700: '#03494f',
+}
+
+
+const theme = extendTheme({ colors })
 
 export default function Layout({ children }) {
-    const { theme, setTheme } = useTheme()
-    if (theme == ('dark')) {
-        imageModeString = "/images/lamp.svg"
-    } else {
-        imageModeString = "/images/lamp-fill.svg"
-    } return (
+ return (
+        <ChakraProvider theme={theme}>
         <div className={styles.container}>
-            <div>
-                <Image
-                    priority
-                    src={imageModeString}
-                    height={25}
-                    width={25}
-                    alt="Toggle dark-mode"
-                    title="Toggle dark-mode"
-                    className="pawPrint"
-                    onClick={() => {
-                        if (theme == ('light')) {
-                            setTheme('dark')
-                        } else {
-                            setTheme('light')
-                        }
-                    }
-                    } />
-            </div>
             <Head>
                 <link rel="icon" href="/favicon.ico" />
                 <meta
@@ -101,5 +91,6 @@ export default function Layout({ children }) {
             <main>{children}</main>
 
         </div>
+        </ChakraProvider>
     )
 }
