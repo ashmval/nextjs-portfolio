@@ -38,46 +38,41 @@ export default function About() {
                 <section title="I'm a sub-nav!" className={utilStyles.padding5px} style={{margin: "right"}}>
                     <br />
 
-                    <Menu>
-                        <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
-                        Sub Navigation
-                        </MenuButton>
-                        <MenuList>
-                            <MenuItem>
-                                <Link href={"#interests"}>
-                                    <a>Interests</a>
-                                </Link>
-                            </MenuItem>
-                            <MenuItem>
-                                <Link href={"#workExperience"}>
-                                    <a>Work Experience</a>
-                                </Link>
-                            </MenuItem>
-                            <MenuItem>
-                                <Link href={"#education"}>
-                                    <a>Education</a>
-                                </Link>
-                            </MenuItem>
-                            <MenuItem>
-                                <Link href={"#skills"}>
-                                    <a>Skills</a>
-                                </Link>
-                            </MenuItem>
 
-                            <MenuItem>
-                                <Link href="/resume.pdf">
-                                    <a>Resume</a>
-                                </Link>
-                            </MenuItem>
-
-                        </MenuList>
-                    </Menu>
                 </section>
 
                 <section className={utilStyles.padding5px}>
                 <Heading as='h2' size='xl' style={{textAlign: "center"}}>
                         About Me
-                    </Heading>
+                </Heading>                    <Menu>
+                    <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
+                        Sub Navigation
+                    </MenuButton>
+                    <MenuList>
+                        <MenuItem>
+                            <Link href={"#interests"}>
+                                <a>Interests</a>
+                            </Link>
+                        </MenuItem>
+                        <MenuItem>
+                            <Link href={"#workExperience"}>
+                                <a>Work Experience</a>
+                            </Link>
+                        </MenuItem>
+                        <MenuItem>
+                            <Link href={"#education"}>
+                                <a>Education</a>
+                            </Link>
+                        </MenuItem>
+                        <MenuItem>
+                            <Link href={"#skills"}>
+                                <a>Skills</a>
+                            </Link>
+                        </MenuItem>
+
+
+                    </MenuList>
+                </Menu>
 
 
 

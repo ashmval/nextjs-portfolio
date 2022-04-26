@@ -13,6 +13,7 @@ import Date from '../components/date'
 import { getSortedProjectsData } from '../lib/projects'
 import styles from "../components/layout.module.css";
 import * as React from "react"
+import {Heading} from "@chakra-ui/react";
 
 export async function getStaticProps() {
     const allProjectsData = getSortedProjectsData()
@@ -31,16 +32,18 @@ export default function Projects({ allProjectsData }) {
                 <title>{siteTitle}</title>
             </Head>
 
-            <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-                <h2 className={utilStyles.headingLg}>Projects</h2>
-                <p>
+            <section className={`${utilStyles.padding5px}  ${utilStyles.spacingTop}`}>
+                <Heading as='h2' size='xl' style={{textAlign: "center"}}>
+                    Projects
+                </Heading>
+                <p className={utilStyles.padding5px}>
                     Here are some of the projects I've worked on during my time in the Computer Information Systems program at Holland College.
                 </p>
                 <ul className={utilStyles.list}>
                     {allProjectsData.map(({ id, title, date }) => (
                         <li className={utilStyles.listItem} key={id}>
                             <Link href={`/projects/${id}`}>
-                                <a>{title}</a>
+                                <a className={utilStyles.blueFont}>{title}</a>
                             </Link>
                             <br />
                             <small className={utilStyles.lightText}>

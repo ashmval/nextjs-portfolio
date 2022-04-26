@@ -8,7 +8,8 @@ import Image from "next/image";
 import Layout, { siteTitle } from '../components/layout'
 import Head from "next/head";
 import utilStyles from "../styles/utils.module.css";
-
+import {Container, Grid, GridItem, Heading} from "@chakra-ui/react";
+import * as React from "react";
 
 export default function Custom404() {
     return (
@@ -16,18 +17,26 @@ export default function Custom404() {
             <Head>
                 <title>{siteTitle}</title>
             </Head>
-            <section className={utilStyles.headingMd}>
+            <section className={`${utilStyles.padding5px}  ${utilStyles.spacingTop}`}>
+                <Heading as='h2' size='xl' style={{textAlign: "center"}}>
+                    Error: 404 - Page not found
+                </Heading>
 
-                <Image
-                    priority
-                    src={"/images/alien.svg"}
-                    height={320}
-                    width={320}
-                    className={utilStyles.alien404}/>
-                <h2 className={utilStyles.heading2Xl}>
-                    Error: 404 - Page not found.
-                </h2>
+                            <Image
+                                priority
+                                src={"/images/alien.svg"}
+                                height={300}
+                                width={700}
+                                />
 
+
+                {/*<Image*/}
+                {/*    priority*/}
+                {/*    src={"/images/alien.svg"}*/}
+                {/*    height={320}*/}
+                {/*    width={320}*/}
+                {/*    style={imageStyle}*/}
+                {/*    className={utilStyles.alien404}/>*/}
             </section>
         </Layout>
     )

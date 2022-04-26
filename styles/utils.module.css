@@ -31,6 +31,7 @@
     font-weight: normal;
     margin-top: 0px;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .borderCircle {
@@ -69,7 +70,15 @@
 }
 
 
-.something {
-    justify-content: center;
+.spacingTop {
+    padding-top: 3.5rem;
+}
+
+.blueFont{
+    color: #538f93;
+}
+
+
+.alien404 {
     align-items: center;
 }
