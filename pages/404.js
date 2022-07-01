@@ -30,13 +30,7 @@ export default function Custom404() {
                                 />
 
 
-                {/*<Image*/}
-                {/*    priority*/}
-                {/*    src={"/images/alien.svg"}*/}
-                {/*    height={320}*/}
-                {/*    width={320}*/}
-                {/*    style={imageStyle}*/}
-                {/*    className={utilStyles.alien404}/>*/}
+
             </section>
         </Layout>
     )

@@ -88,6 +88,18 @@ export default function About() {
                         <ul className={utilStyles.list}>
                             <li className={utilStyles.listItem}>
                                 <p>
+                                    <span className="employer">Workers Compensation Board of PEI, Charlottetown</span>
+                                    <br />
+                                    <span className="titleName">
+                                        Data Analyst
+                                    </span>
+                                    <span className="dates">
+                                        May 2022 - Present
+                                    </span>
+                                </p>
+                            </li>
+                            <li className={utilStyles.listItem}>
+                                <p>
                                     <span className="employer">KOA Campgrounds, Charlottetown/Cornwall </span>
                                     <br />
                                     <span className="titleName">
